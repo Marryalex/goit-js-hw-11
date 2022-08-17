@@ -68,9 +68,6 @@ async function getUser(q) {
             if (!loadMore.classList.contains('visually-hidden')) {
                 loadMore.classList.add('visually-hidden');
             }
-            // if (response.data.total <= 40) {
-            //     return;
-            // }
             Notiflix.Notify.info(
                 "We're sorry, but you've reached the end of search results."
             );
