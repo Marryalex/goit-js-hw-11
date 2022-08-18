@@ -2,7 +2,6 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import Notiflix from 'notiflix';
 const axios = require('axios');
-import OnlyScroll from 'only-scrollbar';
 
 const MY_API_KEY = '29316623-92edd9c1ab4b9b90828fcb6e0';
 let pageforBtn = 1;
@@ -125,7 +124,3 @@ function onClick(e) {
     });
 }
 
-const scroll = new OnlyScroll(document.window, {
-    damping: 0.5,
-    eventContainer: window,
-});
