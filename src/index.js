@@ -123,4 +123,17 @@ function onClick(e) {
         });
     });
 }
+window.addEventListener('scroll', () => {
 
+    const {
+        scrollTop,
+        scrollHeight,
+        clientHeight
+    } = document.documentElement;
+
+    if (scrollHeight - scrollTop <= clientHeight)
+        getUser(valueInput).then(() => {
+            pageforBtn += 1;
+            lightbox.refresh();
+        })
+})
